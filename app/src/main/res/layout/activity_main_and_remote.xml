@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/ll_service_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_service_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="启动Service"/>
+
+        <Button
+            android:id="@+id/btn_service_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止Service"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_service_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/fl_main_process"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主进程："/>
+
+        <FrameLayout
+            android:id="@+id/fl_main_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#33000000"/>
+
+    <LinearLayout
+        android:id="@+id/fl_remote_process"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="远端进程："/>
+
+        <FrameLayout
+            android:id="@+id/fl_remote_fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

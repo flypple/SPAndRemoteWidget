@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/Int"
+        android:title="int"/>
+    <item android:id="@+id/Long"
+        android:title="long"/>
+    <item android:id="@+id/Float"
+        android:title="float"/>
+    <item android:id="@+id/Boolean"
+        android:title="boolean"/>
+    <item android:id="@+id/String"
+        android:title="String"/>
+    <item android:id="@+id/StringSet"
+        android:title="StringSet"/>
+</menu>
